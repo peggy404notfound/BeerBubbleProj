@@ -1,0 +1,210 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b35e70643df4a4daf1e8f488bf3b7da, type: 3}
+  m_Name: Library
+  m_EditorClassIdentifier: 
+  library:
+    list:
+    - key: background-4d2cfb92-2b04-4a40-832d-518f49d0f41d
+      value:
+        key: background
+        id: background-4d2cfb92-2b04-4a40-832d-518f49d0f41d
+        defaultKey: background-4d2cfb92-2b04-4a40-832d-518f49d0f41d
+        value: {fileID: 8300000, guid: e859643bf0defcf4ba6de70e70bdde60, type: 3}
+        path: Assets/Audios/background.wav
+        dynamicStartTime:
+          time: 0
+          threshold: 0
+          option: 1
+          tabPos: 1
+        showDynamicTime: 0
+    - key: button_click-5ef9be13-cf00-4e38-9c5b-9a2ad6288244
+      value:
+        key: button_click
+        id: button_click-5ef9be13-cf00-4e38-9c5b-9a2ad6288244
+        defaultKey: button_click-5ef9be13-cf00-4e38-9c5b-9a2ad6288244
+        value: {fileID: 8300000, guid: 0c2645c4feab79949b206b7ce98cec93, type: 3}
+        path: Assets/Audios/button_click.mp3
+        dynamicStartTime:
+          time: 0
+          threshold: 0
+          option: 1
+          tabPos: 1
+        showDynamicTime: 0
+    - key: game_clear-024a0ffe-fb8b-418a-a2dd-576ab708425c
+      value:
+        key: game_clear
+        id: game_clear-024a0ffe-fb8b-418a-a2dd-576ab708425c
+        defaultKey: game_clear-024a0ffe-fb8b-418a-a2dd-576ab708425c
+        value: {fileID: 8300000, guid: 9d94879e6c627dc4a9b7a4ff1a1556d4, type: 3}
+        path: Assets/Audios/game_clear.mp3
+        dynamicStartTime:
+          time: 0
+          threshold: 0
+          option: 1
+          tabPos: 1
+        showDynamicTime: 0
+    - key: pouring-4e35be53-b079-4152-b2c2-e705f9a166df
+      value:
+        key: pouring
+        id: pouring-4e35be53-b079-4152-b2c2-e705f9a166df
+        defaultKey: pouring-4e35be53-b079-4152-b2c2-e705f9a166df
+        value: {fileID: 8300000, guid: 78da735e7452ca24c80a2ce171fd7396, type: 3}
+        path: Assets/Audios/pouring.wav
+        dynamicStartTime:
+          time: 0
+          threshold: 0
+          option: 1
+          tabPos: 1
+        showDynamicTime: 0
+    - key: bad_end-ab4e5951-8a80-4040-b3dc-c3541946d3d8
+      value:
+        key: bad_end
+        id: bad_end-ab4e5951-8a80-4040-b3dc-c3541946d3d8
+        defaultKey: bad_end-ab4e5951-8a80-4040-b3dc-c3541946d3d8
+        value: {fileID: 8300000, guid: 8b75a41a18b23c04e966297f40a03ef1, type: 3}
+        path: Assets/Sound/bad_end.mp3
+        dynamicStartTime:
+          time: 0
+          threshold: 0
+          option: 1
+          tabPos: 1
+        showDynamicTime: 0
+    - key: giraff_in-fa9d5cac-2222-49db-b10a-256f0bc9e1b4
+      value:
+        key: giraff_in
+        id: giraff_in-fa9d5cac-2222-49db-b10a-256f0bc9e1b4
+        defaultKey: giraff_in-fa9d5cac-2222-49db-b10a-256f0bc9e1b4
+        value: {fileID: 8300000, guid: abe73fb84f9a0094d8827fd981f12d1b, type: 3}
+        path: Assets/Sound/giraff_in.mp3
+        dynamicStartTime:
+          time: 0
+          threshold: 0
+          option: 1
+          tabPos: 1
+        showDynamicTime: 0
+    - key: giraff_sound-1a2f4c2f-109f-4948-8078-601d68dabdb5
+      value:
+        key: giraff_sound
+        id: giraff_sound-1a2f4c2f-109f-4948-8078-601d68dabdb5
+        defaultKey: giraff_sound-1a2f4c2f-109f-4948-8078-601d68dabdb5
+        value: {fileID: 8300000, guid: c5650876deef50249b400890962e8bde, type: 3}
+        path: Assets/Sound/giraff_sound.mp3
+        dynamicStartTime:
+          time: 0
+          threshold: 0
+          option: 1
+          tabPos: 1
+        showDynamicTime: 0
+    - key: hamster_in-91176123-e8a4-4d16-8c7f-19a4fd97773d
+      value:
+        key: hamster_in
+        id: hamster_in-91176123-e8a4-4d16-8c7f-19a4fd97773d
+        defaultKey: hamster_in-91176123-e8a4-4d16-8c7f-19a4fd97773d
+        value: {fileID: 8300000, guid: 598d4a0828e7b7d41bd6b011269cffdd, type: 3}
+        path: Assets/Sound/hamster_in.mp3
+        dynamicStartTime:
+          time: 0
+          threshold: 0
+          option: 1
+          tabPos: 1
+        showDynamicTime: 0
+    - key: hamster_sound-8697093e-08b1-4f2a-b3b5-b2fbeefb757f
+      value:
+        key: hamster_sound
+        id: hamster_sound-8697093e-08b1-4f2a-b3b5-b2fbeefb757f
+        defaultKey: hamster_sound-8697093e-08b1-4f2a-b3b5-b2fbeefb757f
+        value: {fileID: 8300000, guid: 857febbce71ea824e971517300563b27, type: 3}
+        path: Assets/Sound/hamster_sound.mp3
+        dynamicStartTime:
+          time: 0
+          threshold: 0
+          option: 1
+          tabPos: 1
+        showDynamicTime: 0
+    - key: pelican_in-0e4e6590-61f5-4733-82ff-752e4f19d90e
+      value:
+        key: pelican_in
+        id: pelican_in-0e4e6590-61f5-4733-82ff-752e4f19d90e
+        defaultKey: pelican_in-0e4e6590-61f5-4733-82ff-752e4f19d90e
+        value: {fileID: 8300000, guid: a827fd1196e24a4418055c10345ff600, type: 3}
+        path: Assets/Sound/pelican_in.mp3
+        dynamicStartTime:
+          time: 0
+          threshold: 0
+          option: 1
+          tabPos: 1
+        showDynamicTime: 0
+    - key: pelican_sound-b3d77060-6300-4265-b398-861296295396
+      value:
+        key: pelican_sound
+        id: pelican_sound-b3d77060-6300-4265-b398-861296295396
+        defaultKey: pelican_sound-b3d77060-6300-4265-b398-861296295396
+        value: {fileID: 8300000, guid: 1d4d2245182e7af4f988088c8a5710e0, type: 3}
+        path: Assets/Sound/pelican_sound.mp3
+        dynamicStartTime:
+          time: 0
+          threshold: 0
+          option: 1
+          tabPos: 1
+        showDynamicTime: 0
+    - key: bad_end-6d87ac75-9f62-4c9e-bf3d-1c0e781a93d2
+      value:
+        key: bad_end
+        id: bad_end-6d87ac75-9f62-4c9e-bf3d-1c0e781a93d2
+        defaultKey: bad_end-6d87ac75-9f62-4c9e-bf3d-1c0e781a93d2
+        value: {fileID: 8300000, guid: 453c7abcefc6c4f429c589b99825d327, type: 3}
+        path: Assets/Scenes/bad_end.mp3
+        dynamicStartTime:
+          time: 0
+          threshold: 0
+          option: 1
+          tabPos: 1
+        showDynamicTime: 0
+  libraryReverseLookup:
+    list:
+    - key: background
+      value: background-4d2cfb92-2b04-4a40-832d-518f49d0f41d
+    - key: button_click
+      value: button_click-5ef9be13-cf00-4e38-9c5b-9a2ad6288244
+    - key: pouring
+      value: pouring-4e35be53-b079-4152-b2c2-e705f9a166df
+    - key: giraff_in
+      value: giraff_in-fa9d5cac-2222-49db-b10a-256f0bc9e1b4
+    - key: giraff_sound
+      value: giraff_sound-1a2f4c2f-109f-4948-8078-601d68dabdb5
+    - key: hamster_in
+      value: hamster_in-91176123-e8a4-4d16-8c7f-19a4fd97773d
+    - key: hamster_sound
+      value: hamster_sound-8697093e-08b1-4f2a-b3b5-b2fbeefb757f
+    - key: pelican_in
+      value: pelican_in-0e4e6590-61f5-4733-82ff-752e4f19d90e
+    - key: pelican_sound
+      value: pelican_sound-b3d77060-6300-4265-b398-861296295396
+    - key: bad_end
+      value: bad_end-6d87ac75-9f62-4c9e-bf3d-1c0e781a93d2
+    - key: bad_end
+      value: bad_end-ab4e5951-8a80-4040-b3dc-c3541946d3d8
+    - key: game_clear
+      value: game_clear-024a0ffe-fb8b-418a-a2dd-576ab708425c
+  groups:
+    list: []
+  groupsReverseLookup:
+    list: []
+  mixers:
+    list: []
+  mixersReverseLookup:
+    list: []
+  tracks:
+    list: []
+  tracksReverseLookup:
+    list: []
