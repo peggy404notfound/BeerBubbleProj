@@ -46,11 +46,13 @@ public class Foam : MonoBehaviour
         {
             foam = true;
             sp.color = Color.white; // 离开碰撞时恢复为白色
+            sp.sortingOrder = 100;  // 泡沫层级更高，始终盖在啤酒之上
+
 
             // 检查对象是否是活动状态
             if (gameObject.activeSelf && destroyCoroutine == null)
             {
-                destroyCoroutine = StartCoroutine(DestroyAfterDelay(30f));
+                destroyCoroutine = StartCoroutine(DestroyAfterDelay(15f));
             }
         }
     }

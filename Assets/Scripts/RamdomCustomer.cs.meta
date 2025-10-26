@@ -3,7 +3,20 @@ guid: d38e945a347c51845912b5781a506107
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - hints: {instanceID: 0}
+  - tmpText: {instanceID: 0}
+  - feedbackText: {instanceID: 0}
+  - target_image: {instanceID: 0}
+  - sceneEntity: {instanceID: 0}
+  - canvasGroup: {instanceID: 0}
+  - gameClearBg: {instanceID: 0}
+  - success: {instanceID: 0}
+  - failure: {instanceID: 0}
+  - bgmMain: {instanceID: 0}
+  - bgmWin: {fileID: 8300000, guid: 9d94879e6c627dc4a9b7a4ff1a1556d4, type: 3}
+  - bgmLose: {fileID: 8300000, guid: 453c7abcefc6c4f429c589b99825d327, type: 3}
+  - mainBgmSourceToStop: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

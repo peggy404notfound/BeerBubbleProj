@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -579,6 +580,10 @@ MonoBehaviour:
   gameClearBg: {fileID: 1920740204468707306}
   success: {fileID: 21300000, guid: a33314d6ce5ceeb4185b2927890d1cc9, type: 3}
   failure: {fileID: 21300000, guid: aabc168651bac2f4492250d02a4c289a, type: 3}
+  mainBgmPlayer: {fileID: 1590750105}
+  bgmWin: {fileID: 8300000, guid: 9d94879e6c627dc4a9b7a4ff1a1556d4, type: 3}
+  bgmLose: {fileID: 8300000, guid: 453c7abcefc6c4f429c589b99825d327, type: 3}
+  passTolerance: 12
 --- !u!114 &297509375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1624,6 +1629,12 @@ MonoBehaviour:
   maxSpawnInterval: 0.05
   maxHeight: -0.3
   ifMax: 0
+  neutralY: -1
+  startThreshold: 0.12
+  stopThreshold: 0.08
+  tiltRange: 0.6
+  invertSign: 0
+  smooth: 8
 --- !u!114 &879240990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2977,12 +2988,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
 --- !u!81 &1511808663
 AudioListener:
   m_ObjectHideFlags: 0
@@ -5135,7 +5146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.5019608}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5498,7 +5509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -6745,7 +6756,7 @@ RectTransform:
   m_GameObject: {fileID: 3634057311567374120}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 457052946423961540}
