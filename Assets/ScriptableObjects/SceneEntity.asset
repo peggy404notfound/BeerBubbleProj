@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b64fbf452a0ab524d8188f1789aa009f, type: 3}
   m_Name: SceneEntity
   m_EditorClassIdentifier: 
-  max_scenes: 3
-  num_scene: 1
-  current_scene: 1
+  max_scenes: 5
+  num_scene: 5
+  current_scene: 4

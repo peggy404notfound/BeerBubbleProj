@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -384,8 +385,8 @@ Transform:
   m_GameObject: {fileID: 41264490}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.08, y: 0.2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.37, y: -0.31, z: 0}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1093076371}
@@ -672,7 +673,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!1 &333715546
 GameObject:
@@ -1058,6 +1059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8a48e98301c18d4e80835a9b1c8438f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  needStay: 0.2
 --- !u!61 &452415237
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1090,7 +1092,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.562425, y: -0.52422994}
+  m_Offset: {x: -2.3959212, y: -1.0877781}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1101,7 +1103,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.182673, y: 0.3133012}
+  m_Size: {x: 6.1570606, y: 0.46699858}
   m_EdgeRadius: 0
 --- !u!1 &468030364
 GameObject:
@@ -1148,6 +1150,10 @@ MonoBehaviour:
   gameClearBg: {fileID: 1748690716}
   success: {fileID: 21300000, guid: a33314d6ce5ceeb4185b2927890d1cc9, type: 3}
   failure: {fileID: 21300000, guid: aabc168651bac2f4492250d02a4c289a, type: 3}
+  mainBgmPlayer: {fileID: 879791532}
+  bgmWin: {fileID: 8300000, guid: 9d94879e6c627dc4a9b7a4ff1a1556d4, type: 3}
+  bgmLose: {fileID: 8300000, guid: 453c7abcefc6c4f429c589b99825d327, type: 3}
+  passTolerance: 12
 --- !u!114 &468030366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1490,7 +1496,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -19.53, y: 0.16, z: 0}
-  m_LocalScale: {x: 0.36336353, y: 0.36336353, z: 0.24224238}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1585382051}
@@ -1820,6 +1826,12 @@ MonoBehaviour:
   maxSpawnInterval: 0.05
   maxHeight: -0.3
   ifMax: 0
+  neutralY: -1
+  startThreshold: 0.12
+  stopThreshold: 0.08
+  tiltRange: 0.6
+  invertSign: 0
+  smooth: 8
 --- !u!212 &614607512
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3965,12 +3977,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
 --- !u!81 &1363592969
 AudioListener:
   m_ObjectHideFlags: 0
@@ -4578,7 +4590,7 @@ RectTransform:
   m_GameObject: {fileID: 1731625905}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 766591055}
@@ -4722,7 +4734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.5019608}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5203,7 +5215,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -7.3285027, y: -7.649723}
+  m_Offset: {x: -7.3285065, y: -7.6142797}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5214,7 +5226,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 129.03333, y: 0.68780327}
+  m_Size: {x: 129.03333, y: 0.7586899}
   m_EdgeRadius: 0
 --- !u!1 &2039644260
 GameObject:
